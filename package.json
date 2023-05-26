@@ -1,0 +1,27 @@
+{
+  "name": "DekuBot",
+  "version": "1.0.0",
+  "main": "./src",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "deploy": "node dist/server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@discordjs/core": "^0.5.2",
+    "@discordjs/rest": "^1.7.0",
+    "@types/node": "^18.16.2",
+    "discord-api-types": "^0.37.40",
+    "discord.js": "^14.9.0",
+    "eslint": "^8.22.0",
+    "global": "^4.4.0",
+    "nodemon": "^2.0.22",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "eslint-config-standard-with-typescript": "^22.0.0"
+  }
+}
